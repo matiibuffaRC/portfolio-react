@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-btns{
+    margin-right: 20px;
+}
+
+
+
+.header-title{
+    margin-left: 20px;
+}
