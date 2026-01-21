@@ -1,0 +1,12 @@
+.presentation{
+    margin: 200px 0px 100px 0px;
+}
+
+.presentation-buttons{
+    margin-top: 20px;
+}
+
+.presentation-buttons a{
+    padding: 7px 20px;
+    border-radius: 25px;
+}
