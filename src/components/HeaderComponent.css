@@ -1,0 +1,50 @@
+.header-title{
+    margin-left: 10px;
+}
+
+.header-btns{
+    margin-right: 10px;
+}
+
+.nav-list{
+    margin-top: 25px;
+}
+
+.nav-list-item{
+    margin: 15px 10px;
+    padding-left: 5px;
+}
+
+@media (min-width: 768px){
+
+    .header-title{
+        margin-left: 20px;
+    }
+
+    .nav-list{
+        margin-top: 0px;
+        margin-right: 20px;
+    }
+    .nav-list-item{
+        margin: 30px 0px;
+        padding: 5px 20px;
+    }
+}
+
+
+@media (min-width: 1024px){
+
+    .header-title{
+        margin-left: 20px;
+    }
+
+    .nav-list{
+        margin-top: 0px;
+        margin-right: 20px;
+        gap: 0;
+    }
+    .nav-list-item{
+        margin: 30px 0px;
+        padding: 5px 20px;
+    }
+}

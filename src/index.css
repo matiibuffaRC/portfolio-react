@@ -1,8 +1,18 @@
 @import "tailwindcss";
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+* {
     box-sizing: border-box;
 }
 
@@ -10,14 +20,4 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.menu-btns{
-    margin-right: 20px;
-}
-
-
-
-.header-title{
-    margin-left: 20px;
 }
