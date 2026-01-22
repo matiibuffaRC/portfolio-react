@@ -1,0 +1,45 @@
+.projects-title{
+    padding: 20px 0px 0px 20px;
+}
+
+.projects-subtitle{
+    padding: 0px 0px 20px 20px;
+}
+
+.project-container{
+    margin: 10px 20px;
+}
+
+.project-information{
+    margin: 10px 0px;
+}
+
+.project-title{
+    margin: 5px 0px 0px 10px;
+}
+
+.project-description{
+    margin: 0px 10px 15px 10px;
+}
+
+svg{
+    filter: invert();
+}
+
+.project-link{
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+.technologies-container{
+    margin-top: 10px;
+}
+
+.tech{
+    padding: 7px 20px;
+    margin: 5px 10px;
+}
+
+.project-img{
+    margin: 20px 10px;
+}
