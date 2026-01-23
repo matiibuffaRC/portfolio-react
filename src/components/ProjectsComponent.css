@@ -1,3 +1,9 @@
+.projects-section{
+    margin-top: 40px;
+    margin: 20px 20px 0px 20px;
+    padding-top: 50px;
+}
+
 .projects-title{
     padding: 20px 0px 0px 20px;
 }
@@ -7,7 +13,12 @@
 }
 
 .project-container{
-    margin: 10px 20px;
+    margin: 30px 20px 50px 20px;
+    padding-bottom: 20px;
+}
+
+.project-container:first-child{
+    margin-top: 0px;
 }
 
 .project-information{
@@ -15,11 +26,11 @@
 }
 
 .project-title{
-    margin: 5px 0px 0px 10px;
+    margin: 5px 0px 5px 0px;
 }
 
 .project-description{
-    margin: 0px 10px 15px 10px;
+    margin-bottom: 15px;
 }
 
 svg{
@@ -27,8 +38,8 @@ svg{
 }
 
 .project-link{
-    padding: 10px 20px;
-    margin-left: 10px;
+    padding: 5px 20px;
+    
 }
 
 .technologies-container{
@@ -36,10 +47,52 @@ svg{
 }
 
 .tech{
-    padding: 7px 20px;
-    margin: 5px 10px;
+    padding: 7px 15px;
+    margin: 5px 7px;
+}
+
+.tech:first-child{
+    margin-left: 0;
 }
 
 .project-img{
-    margin: 20px 10px;
+    margin: 15px 10px;
+}
+
+.project-photo{
+    margin: 10px 0px;
+    margin-left: 0px;
+}
+
+
+.projects-section{
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px){
+    .project-photo{
+        width: 100%;
+        margin-right: 11px;
+    }
+}
+
+@media (min-width: 768px){
+    .project-container:nth-child(odd) .project-photo{
+        margin-right: 10px;
+    }
+}
+
+
+@media (min-width: 1024px){
+    .project-information{
+        padding: 0px 5px;
+    }
+
+    .project-container:nth-child(even) .project-photo{
+        margin-right: 10px;
+    }
+
+    .project-container:nth-child(odd) .project-photo{
+        margin-right: 10px;
+    }
 }

@@ -7,7 +7,12 @@
 }
 
 .nav-list{
-    margin-top: 25px;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.btn-menu{
+    overflow-y: hidden;
 }
 
 .nav-list-item{

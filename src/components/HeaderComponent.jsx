@@ -6,13 +6,13 @@ function HeaderComponent() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024); // lg
 
-  // Detectar cambios de resolución
+
     useEffect(() => {
         const handleResize = () => {
         const mobile = window.innerWidth < 1024;
         setIsMobile(mobile);
 
-      // Si pasamos a desktop, cerramos el menú
+
         if (!mobile) {
             setMenuOpen(false);
         }
@@ -48,6 +48,7 @@ function HeaderComponent() {
                 strokeLinecap="square"
                 strokeWidth="2"
                 d="M5.536 15.536L2 12l3.536-3.536m12.928 7.072L22 12l-3.536-3.536M14 4l-4 16"
+                className="invert"
             />
         </svg>
             <h4 className="text-[1.1rem] md:text-[1rem] lg:text-[1.1rem]">
@@ -57,7 +58,7 @@ function HeaderComponent() {
 
         <div className="header-btns flex flex-row items-center lg:hidden">
             <span
-                className="material-symbols-outlined cursor-pointer text-[1.1rem]"
+                className="btn-menu material-symbols-outlined cursor-pointer text-[1.1rem]"
             onClick={openMenu}
             >
                 menu
