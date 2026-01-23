@@ -1,6 +1,6 @@
 // import React from 'react'
 import './ProjectsComponent.css'
-import {projects} from "../data/projects";
+import {projects} from "../../data/projects";
 
 function ProjectsComponent() {
 

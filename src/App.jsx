@@ -1,8 +1,8 @@
 import './App.css'
 import { useState } from 'react'
-import HeaderComponent from './components/HeaderComponent.jsx'
-import PresentationComponent from './components/PresentationComponent.jsx';
-import ProjectsComponent from './components/ProjectsComponent.jsx';
+import HeaderComponent from './components/Header/HeaderComponent.jsx'
+import PresentationComponent from './components/Presentation/PresentationComponent.jsx';
+import ProjectsComponent from './components/Projects/ProjectsComponent.jsx';
 
 function App() {
 
