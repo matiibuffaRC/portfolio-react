@@ -1,17 +1,7 @@
 .projects-section{
-    margin-top: 40px;
-    margin: 20px 20px 0px 20px;
+    margin: 20px;
     padding-top: 50px;
-}
-
-.projects-title{
-    padding: 20px 0px 0px 20px;
-}
-
-
-
-.projects-subtitle{
-    padding: 0px 0px 20px 20px;
+    padding-bottom: 20px;
 }
 
 .project-container{
@@ -41,7 +31,6 @@ svg{
 
 .project-link{
     padding: 5px 15px;
-    
 }
 
 .technologies-container{
@@ -62,10 +51,8 @@ svg{
 }
 
 .project-photo{
-    margin: 10px 0px;
-    margin-left: 0px;
+    margin: 10px 0;
 }
-
 
 .projects-section{
     padding-bottom: 20px;
@@ -84,16 +71,12 @@ svg{
     }
 }
 
-
 @media (min-width: 1024px){
     .project-information{
         padding: 0px 5px;
     }
 
-    .project-container:nth-child(even) .project-photo{
-        margin-right: 10px;
-    }
-
+    .project-container:nth-child(even) .project-photo,
     .project-container:nth-child(odd) .project-photo{
         margin-right: 10px;
     }

@@ -12,8 +12,8 @@ function ProjectsComponent() {
 
                 {/* Sección con la información de cada proyecto */}
                 <div className='project-information w-full'>
-                    <h3 className='project-title text-[1.2rem]'>{project.title}</h3>
-                    <h4 className='project-description w-full text-[#ddd] text-[1rem] '>{project.description}</h4>
+                    <h3 className='project-title text-[1.2rem] lg:text-[1.4rem]'>{project.title}</h3>
+                    <h4 className='project-description w-full text-[#ddd] text-[1rem] lg:text-[1.1rem]'>{project.description}</h4>
                     <a href={project.github} target='_blank' className='project-link bg-[#2b2e36] w-30 text-[1rem] rounded-[15px] flex flex-row items-center justify-center gap-2 px-4 py-2 hover:bg-[#353841] transition-colors'>
                         <img 
                             src={githubIcon}
