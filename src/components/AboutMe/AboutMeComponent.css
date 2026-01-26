@@ -1,0 +1,37 @@
+.aboutMe-container{
+    margin: 40px 20px;
+}
+
+.aboutMe-title{
+    /* margin-bottom: 100px; */
+    padding: 20px 0px 0px 15px;
+}
+
+.aboutMe-subtitle{
+    padding: 0px 20px 0px 15px;
+}
+
+.aboutMe-information-personal, .aboutMe-information-university{
+    margin: 5px;
+}
+
+.aboutMe-information-university{
+    padding: 5px 10px;
+}
+
+.aboutMe-text{
+    margin: 2.5px 0px 10px 10px;
+}
+
+.aboutMe-information-university-title{
+    margin-top: 10px;
+}
+
+@media (min-width:1024px) {
+    .aboutMe-container{
+        margin: 100px 0px;
+    }
+    .aboutMe-information-university{
+        padding: 10px;
+    }
+}
