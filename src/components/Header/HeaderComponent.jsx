@@ -1,5 +1,7 @@
 import "./HeaderComponent.css"
 import { useState, useEffect } from "react";
+import menuIcon from "../../icons/Menu.svg";
+import downloadIcon from "../../icons/Download.svg";
 
 function HeaderComponent() {
 
@@ -57,12 +59,12 @@ function HeaderComponent() {
         </div>
 
         <div className="header-btns flex flex-row items-center lg:hidden">
-            <span
-                className="btn-menu material-symbols-outlined cursor-pointer text-[1.1rem]"
-            onClick={openMenu}
-            >
-                menu
-            </span>
+            <img 
+                src={menuIcon}
+                alt="Menú" 
+                className="cursor-pointer w-6 h-6 invert"
+                onClick={openMenu}
+            />
         </div>
 
         <nav
