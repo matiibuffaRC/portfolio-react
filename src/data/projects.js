@@ -2,8 +2,6 @@ import project1Image from "../assets/imgs/projectImg.jfif"
 import project2Image from "../assets/imgs/projectImg2.jfif"
 import project3Image from "../assets/imgs/projectImg3.jfif"
 
-
-
 export const projects = [
     {
         id:1,
