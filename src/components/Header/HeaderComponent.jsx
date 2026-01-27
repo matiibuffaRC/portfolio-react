@@ -1,9 +1,8 @@
 import "./HeaderComponent.css"
 import { useState, useEffect } from "react";
 import menuIcon from "../../icons/Menu.svg";
-import downloadIcon from "../../icons/Download.svg";
 
-function HeaderComponent() {
+function HeaderComponent({ scrollToSection, refs }) {
 
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024); // lg
@@ -27,6 +26,11 @@ function HeaderComponent() {
     const openMenu = () => {
         if (!isMobile) return;
         setMenuOpen(prev => !prev);
+    };
+
+    const handleNavClick = (ref) => {
+        scrollToSection(ref);
+        setMenuOpen(false);
     };
 
     return (
@@ -76,10 +80,21 @@ function HeaderComponent() {
             lg:translate-x-0 lg:transition-none lg:flex lg:items-center`}
         >
             <ul className="nav-list flex flex-col lg:flex-row lg:gap-4 lg:p-0 lg:h-full lg:items-center">
-                <li className="nav-list-item  cursor-pointer lg:hover:bg-[#333A45] rounded-[25px] lg:text-[1rem]" onClick={openMenu}>Inicio</li>
-                <li className="nav-list-item  cursor-pointer lg:hover:bg-[#333A45] rounded-[25px] lg:text-[1rem]" onClick={openMenu}>Experiencia</li>
-                <li className="nav-list-item  cursor-pointer lg:hover:bg-[#333A45] rounded-[25px] lg:text-[1rem]" onClick={openMenu}>Proyectos</li>
-                <li className="nav-list-item  cursor-pointer lg:hover:bg-[#333A45] rounded-[25px] lg:text-[1rem]" onClick={openMenu}>Sobre mí</li>
+                <li 
+                    className="nav-list-item cursor-pointer lg:hover:bg-[#333A45] rounded-[25px] lg:text-[1rem]" 
+                    onClick={() => handleNavClick(refs.presentationRef)}>
+                    Inicio
+                </li>
+                <li 
+                    className="nav-list-item cursor-pointer lg:hover:bg-[#333A45] rounded-[25px] lg:text-[1rem]" 
+                    onClick={() => handleNavClick(refs.projectsRef)}>
+                    Proyectos
+                </li>
+                <li 
+                    className="nav-list-item cursor-pointer lg:hover:bg-[#333A45] rounded-[25px] lg:text-[1rem]" 
+                    onClick={() => handleNavClick(refs.aboutMeRef)}>
+                    Sobre mí
+                </li>
             </ul>
         </nav>
         </div>
