@@ -9,25 +9,25 @@ function FooterComponent() {
             <div className="footer-container text-white flex flex-col md:flex-row md:w-screen md:justify-around">
                 <h3>Diseñado y desarrollador por Matías Buffa</h3>
                 <div className="flex flex-row justify-center items-center gap-1">
-                    <a href="https://github.com/matiibuffaRC" target="__blank">
+                    <a href="https://github.com/matiibuffaRC" target="__blank" className="footer-icon">
                         <img 
                         src={githubIcon}
                         alt="github" 
-                        className="cursor-pointer w-5 h-5 invert"
+                        className="cursor-pointer w-6 h-6 invert"
                         />
                     </a>
-                    <a href="mailto:mati01buffa@gmail.com" target="__blank">
+                    <a href="mailto:mati01buffa@gmail.com" target="__blank" className="footer-icon">
                         <img 
                         src={mailIcon}
                         alt="Mail" 
-                        className="cursor-pointer w-5 h-5 invert"
+                        className="cursor-pointer w-6 h-6 invert"
                         />
                     </a>
-                    <a href="https://www.linkedin.com/in/mat%C3%ADas-buffa-b4b901358/" target="__blank">
+                    <a href="https://www.linkedin.com/in/mat%C3%ADas-buffa-b4b901358/" target="__blank" className="footer-icon">
                         <img 
                         src={linkedinIcon}
                         alt="Linkedin" 
-                        className="cursor-pointer w-5 h-5 invert"
+                        className="cursor-pointer w-6 h-6 invert"
                         />
                     </a>
                 </div>

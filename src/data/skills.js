@@ -12,13 +12,13 @@ export const skills = [
     {
         id: 2,
         categoryName: "FrameWorks y librerías",
-        technologies: ["React", "Node.js", "Vite", "Next.js"],
+        technologies: ["React", "Node.js", "Next.js"],
         icon:FrameWorksImage,
     },
     {
         id: 3,
         categoryName: "Herramientas",
-        technologies: ["Git", "Github", "Figma", "VS Code", "Microsoft Office"],
+        technologies: ["Git", "Github", "Vite", "Vercel", "Figma", "VS Code", "Microsoft Office"],
         icon:toolsImage,
     }
 ]
