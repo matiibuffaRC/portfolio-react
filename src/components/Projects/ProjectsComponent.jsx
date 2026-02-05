@@ -42,7 +42,7 @@ function ProjectsComponent() {
                 </a>
 
                 <a href={project.url} target="__blank" className={`project-state rounded-[15px] flex flex-row items-center justify-center  ${project.estado === "Página oficial"
-                    ? "bg-[#51BBD5]"
+                    ? "bg-[#51BBD5] text-black"
                     : "bg-[#2b2e36]"}`}>{project.estado}</a>
             </div>
 
