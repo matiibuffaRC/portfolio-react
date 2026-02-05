@@ -24,7 +24,7 @@ export const projects = [
         technologies: ["React", "Vite", "Vercel","TailwindCSS"],
         github: "https://github.com/matiibuffaRC/cabanias-lo-nuestro",
         estado: "Página oficial",
-        url: "#",
+        url: "https://lonuestro.vercel.app/",
         cover:project2Image1,
         imgs:[project2Image2, project2Image3,project2Image4]
     },
