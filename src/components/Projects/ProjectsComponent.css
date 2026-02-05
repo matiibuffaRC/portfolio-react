@@ -5,7 +5,7 @@
 }
 
 .project-container{
-    margin: 30px 20px 50px 20px;
+    margin: 30px 10px 50px 10px;
     padding-bottom: 20px;
 }
 
@@ -29,8 +29,9 @@ svg{
     filter: invert();
 }
 
-.project-link{
+.project-link, .project-state{
     padding: 5px 15px;
+    margin: 5px 0px;
 }
 
 .technologies-container{
@@ -50,34 +51,17 @@ svg{
     margin: 15px 10px;
 }
 
-.project-photo{
-    margin: 10px 0;
-}
-
 .projects-section{
     padding-bottom: 20px;
 }
 
-@media (max-width: 768px){
-    .project-photo{
-        width: 100%;
-        margin-right: 11px;
-    }
-}
-
-@media (min-width: 768px){
-    .project-container:nth-child(odd) .project-photo{
-        margin-right: 10px;
-    }
-}
 
 @media (min-width: 1024px){
     .project-information{
         padding: 0px 5px;
     }
 
-    .project-container:nth-child(even) .project-photo,
-    .project-container:nth-child(odd) .project-photo{
-        margin-right: 10px;
+    .project-photo{
+        margin: 0px 5px;
     }
 }

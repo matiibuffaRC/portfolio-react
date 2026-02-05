@@ -1,61 +1,92 @@
-// import React from 'react'
-import './ProjectsComponent.css';
-import {projects} from "../../data/projects";
+import { useState } from "react";
+import "./ProjectsComponent.css";
+import { projects } from "../../data/projects";
 import githubIcon from "../../icons/Github.svg";
-
 
 function ProjectsComponent() {
 
-    const printProjects = projects.map((project)=>{
-        return(
-            <div key={project.id} className={`project-container flex flex-col md:flex-row lg:flex-row ${project.id % 2 === 0 ? "" : "md:flex-row-reverse lg:flex-row-reverse"} md:items-center lg:items-center border-b-2 border-[#353841]`}>
+    const [imageSelected, setImageSelected] = useState(
+        projects.map(() => null)
+    );
 
-                {/* Sección con la información de cada proyecto */}
-                <div className='project-information w-full'>
-                    <h3 className='project-title text-[1.2rem] lg:text-[1.4rem]'>{project.title}</h3>
-                    <h4 className='project-description w-full text-[#ddd] text-[1rem] lg:text-[1.1rem]'>{project.description}</h4>
-                    <a href={project.github} target='_blank' className='project-link bg-[#2b2e36] w-30 text-[1rem] rounded-[15px] flex flex-row items-center justify-center gap-2 px-4 py-2 hover:bg-[#353841] transition-colors'>
-                        <img 
-                            src={githubIcon}
-                            alt="github" 
-                            className="cursor-pointer w-5 h-5 invert"
-                        />
-                        Código
-                    </a>
-                    
+    const changeImage = (projectIndex, imageIndex) => {
+        setImageSelected(prev => {
+        const copy = [...prev];
+        copy[projectIndex] = imageIndex;
+        return copy;
+        });
+    };
 
-                    <div className='technologies-container flex flex-wrap '>
-                        {project.technologies.map((technology)=>(
-                        <h5 className='tech bg-[#2b2e36] rounded-[25px] text-[1rem]' key={technology}>
-                            {technology}
-                        </h5>
-                        ))}
-                    </div>
+    const printProjects = projects.map((project, projectIndex) => {
+        const currentImage =
+            imageSelected[projectIndex] === null
+            ? project.cover
+            : project.imgs[imageSelected[projectIndex]];
 
-                </div>
+        return (
+        <div key={project.id} className={`project-container flex flex-col md:flex-row ${project.id % 2 === 0 ? "" : "md:flex-row-reverse"} md:items-center border-b-2 border-[#353841] gap-2`}>
 
-                {/* Sección con la foto de cada proyecto */}
+        <div className="project-information w-full">
+            <h3 className="project-title text-[1.2rem] lg:text-[1.4rem]">
+                {project.title}
+            </h3>
 
-                <div className='project-photo w-full lg:w-[80%] md:w-[75%] rounded-[15px] '>
-                    <img src={project.img} alt="" className='w-full object-fill rounded-[15px]'/>
-                </div>
+            <h4 className="project-description text-[#ddd]">
+                {project.description}
+            </h4>
+
+            <div className=" flex flex-row gap-2">
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link bg-[#2b2e36] w-30 rounded-[15px] flex items-center justify-center gap-2 px-4 py-2 hover:bg-[#353841] transition-colors">
+                    <img src={githubIcon} alt="github" className="w-5 h-5 invert" />
+                    Código
+                </a>
+
+                <a href="#" className={`project-state rounded-[15px] flex flex-row items-center justify-center  ${project.estado === "Página oficial"
+                    ? "bg-[#51BBD5]"
+                    : "bg-[#2b2e36]"}`}>{project.estado}</a>
             </div>
-        )
-    })
+
+            <div className="technologies-container flex flex-wrap">
+                {project.technologies.map((tech) => (
+                <h5 key={tech} className="tech bg-[#2b2e36] rounded-[25px]">
+                    {tech}
+                </h5>
+                ))}
+            </div>
+        </div>
+
+        {/* FOTOS */}
+        <div className="flex flex-col-reverse md:flex-row gap-2 md:w-[90%]">
+            <div className="photos-options-container flex md:flex-col justify-center items-center gap-2">
+                {project.imgs.map((img, imgIndex) => (
+                <div key={imgIndex} onClick={() => changeImage(projectIndex, imgIndex)} className={`project-photo w-14 h-14 rounded-[10px] cursor-pointer border ${imageSelected[projectIndex] === imgIndex
+                    ? "border-white"
+                    : "border-[#2a2d35]"}`}>
+                    <img src={img} alt="" className="w-full h-full object-cover rounded-[10px]"/>
+                </div>
+                ))}
+            </div>
+
+            <div className="project-photo w-full rounded-[20px] flex justify-center items-center border-3 border-[#2a2d35] shadow-2xl">
+                <img src={currentImage} alt="" className="w-full object-fill rounded-[15px]"/>
+            </div>
+        </div>
+    </div>
+    );
+    });
 
     return (
-            <div className='w-full h-full bg-[#1a1d23] flex flex-col justify-center items-center'>
-                <div className='projects-section  text-white lg:w-5xl'>
-                    <div>
-                        <h2 className='projects-title text-[1rem] text-[#58C4DC]'>PROYECTOS</h2>
-                        <h3 className='projects-subtitle text-[1.4rem]'>Mis proyectos destacados</h3>
-                    </div>
-                    <div className='projects-container '>
-                        {printProjects}
-                    </div>
+        <div className="w-full bg-[#1a1d23] flex justify-center">
+            <div className="projects-section text-white lg:w-5xl">
+                <h2 className="text-[#58C4DC]">PROYECTOS</h2>
+                <h3 className="text-[1.4rem]">Mis proyectos destacados</h3>
+
+                <div className="projects-container">
+                    {printProjects}
                 </div>
             </div>
-    )
+        </div>
+    );
 }
 
-export default ProjectsComponent
+export default ProjectsComponent;

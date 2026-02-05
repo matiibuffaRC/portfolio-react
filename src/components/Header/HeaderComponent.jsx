@@ -10,14 +10,14 @@ function HeaderComponent({ scrollToSection, refs }) {
 
     useEffect(() => {
         const handleResize = () => {
-        const mobile = window.innerWidth < 1024;
-        setIsMobile(mobile);
+            const mobile = window.innerWidth < 1024;
+            setIsMobile(mobile);
 
 
-        if (!mobile) {
-            setMenuOpen(false);
-        }
-    };
+            if (!mobile) {
+                setMenuOpen(false);
+            }
+        };
 
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
