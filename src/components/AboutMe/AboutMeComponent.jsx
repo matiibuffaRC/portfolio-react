@@ -31,7 +31,7 @@ function AboutMeComponent() {
 
                     <div className="aboutMe-information-personal md:col-start-1 md:row-start-1">
                         
-                        <h3 className="aboutMe-text text-[#ddd] text-[1.1rem] lg:text-[rem] text-pretty">
+                        <h3 className="aboutMe-text text-[#ddd] text-[1.1rem] lg:text-[1.2rem] text-pretty">
                             Soy un desarrollador de software especializado en aplicaciones web Full Stack, enfocado en React y Node.js.
                         </h3>
                         <h3 className="aboutMe-text text-[#ddd] text-[1.1rem]  lg:text-[1.2rem] text-pretty">
