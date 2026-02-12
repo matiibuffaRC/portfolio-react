@@ -30,7 +30,6 @@ function AboutMeComponent() {
                 <div className="aboutMe-information-container grid grid-cols-1  gap-2.5 md:grid-cols-2 md:grid-rows-2">
 
                     <div className="aboutMe-information-personal md:col-start-1 md:row-start-1">
-                        
                         <h3 className="aboutMe-text text-[#ddd] text-[1.1rem] lg:text-[1.2rem] text-pretty">
                             Soy un desarrollador de software especializado en aplicaciones web Full Stack, enfocado en React y Node.js.
                         </h3>
@@ -44,7 +43,8 @@ function AboutMeComponent() {
 
                     <div className="aboutMe-information-university md:col-start-1 md:row-start-2">
                         <h3 className="aboutMe-text aboutMe-information-title text-[1.3rem] text-white lg:text-[1.5rem]">Ingeniería en Sistemas de Información (2023 - Actualidad).</h3>
-                        <h3 className="aboutMe-text text-[#ddd] text-[1.1rem] lg:text-[1.2rem]">En transcurso del cursado de la carrera desarrollé pensamiento lógico, modelado de sistemas y bases sólidas en algoritmos y estructuras de datos, trabajando con requerimientos reales.</h3>
+                        <h3 className="aboutMe-text text-[#ddd] text-[1.1rem] lg:text-[1.2rem]">En el transcurso del cursado de la carrera desarrollé pensamiento lógico, modelado de sistemas y bases sólidas en algoritmos y estructuras de datos, trabajando con requerimientos reales.</h3>
+                        
                     </div>
 
                     <div className="aboutMe-information-skills md:col-start-2 md:row-start-1 md:row-span-2 bg-[#1A1D23] rounded-[25px]">

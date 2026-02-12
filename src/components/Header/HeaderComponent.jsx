@@ -1,6 +1,7 @@
 import "./HeaderComponent.css"
 import { useState, useEffect } from "react";
 import menuIcon from "../../icons/Menu.svg";
+import profileImg from "../../assets/imgs/profileImg.jpg"
 
 function HeaderComponent({ scrollToSection, refs }) {
 
@@ -34,7 +35,7 @@ function HeaderComponent({ scrollToSection, refs }) {
     };
 
     return (
-    <header className="header h-13.75 w-screen shadow-md bg-[#23272F] flex items-center justify-between text-white fixed left-0 top-0 z-15  lg:justify-center">
+    <header className="header h-15 w-screen shadow-md bg-[#23272F] flex items-center justify-between text-white fixed left-0 top-0 z-15  lg:justify-center">
         <div
             className={`fixed inset-0 bg-[rgba(0,0,0,.45)] z-10 
             ${menuOpen ? "block" : "hidden"} lg:hidden`}
@@ -42,25 +43,18 @@ function HeaderComponent({ scrollToSection, refs }) {
         />
 
         <div className=" w-full h-full justify-between flex flex-row lg:w-5xl lg:justify-between lg:items-center">
-            <div className="header-title flex flex-row items-center gap-2">
-            <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            className="h-5 w-5 md:h-5 md:w-5 lg:h-6 lg:w-6"
-            >
-            <path
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="square"
-                strokeWidth="2"
-                d="M5.536 15.536L2 12l3.536-3.536m12.928 7.072L22 12l-3.536-3.536M14 4l-4 16"
-                className="invert"
-            />
-        </svg>
-            <h4 className="text-[1.1rem] md:text-[1rem] lg:text-[1.1rem]">
-                MatíasBuffa
-            </h4>
-        </div>
+            <div className="header-title flex flex-row items-center justify-center gap-1">
+                <div className="b h-full flex flex-col justify-center">
+                    <img src={profileImg} alt="Profile image" className="h-10 rounded-[50%]"/>
+                </div>
+                <div className="flex flex-col justify-center items-start h-full">
+                    <h4 className="text-[1rem] md:text-[1rem] lg:text-[1.1rem]">
+                        Matías Buffa
+                    </h4>
+                    <h5 className="text-[.7rem]">Desarrollador Web</h5>
+                </div>
+                
+            </div>
 
         <div className="header-btns flex flex-row items-center lg:hidden">
             <img 
@@ -81,17 +75,17 @@ function HeaderComponent({ scrollToSection, refs }) {
         >
             <ul className="nav-list flex flex-col lg:flex-row lg:gap-4 lg:p-0 lg:h-full lg:items-center">
                 <li 
-                    className="nav-list-item cursor-pointer lg:hover:bg-[#333A45] rounded-[25px] lg:text-[1rem]" 
+                    className="nav-list-item cursor-pointer text-[1.2rem] lg:hover:bg-[#333A45] rounded-[25px] lg:text-[1rem]" 
                     onClick={() => handleNavClick(refs.presentationRef)}>
                     Inicio
                 </li>
                 <li 
-                    className="nav-list-item cursor-pointer lg:hover:bg-[#333A45] rounded-[25px] lg:text-[1rem]" 
+                    className="nav-list-item cursor-pointer text-[1.2rem] lg:hover:bg-[#333A45] rounded-[25px] lg:text-[1rem]" 
                     onClick={() => handleNavClick(refs.projectsRef)}>
                     Proyectos
                 </li>
                 <li 
-                    className="nav-list-item cursor-pointer lg:hover:bg-[#333A45] rounded-[25px] lg:text-[1rem]" 
+                    className="nav-list-item cursor-pointer text-[1.2rem] lg:hover:bg-[#333A45] rounded-[25px] lg:text-[1rem]" 
                     onClick={() => handleNavClick(refs.aboutMeRef)}>
                     Sobre mí
                 </li>

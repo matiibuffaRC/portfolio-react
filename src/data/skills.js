@@ -6,19 +6,19 @@ export const skills = [
     {
         id: 1,
         categoryName: "Lenguajes de programación",
-        technologies: ["C++","HTML","CSS", "JavaScript", "TypeScript"],
+        technologies: ["HTML","CSS", "JavaScript", "TypeScript"],
         icon:lenguagesImage,
     },
     {
         id: 2,
         categoryName: "FrameWorks y librerías",
-        technologies: ["React", "Node.js", "Next.js"],
+        technologies: ["React.js", "Tailwind CSS", "Node.js", "Next.js"],
         icon:FrameWorksImage,
     },
     {
         id: 3,
         categoryName: "Herramientas",
-        technologies: ["Git", "Github", "Vite", "Vercel", "Figma", "VS Code", "Microsoft Office"],
+        technologies: ["Git", "Github", "Figma", "VS Code", "Microsoft Office"],
         icon:toolsImage,
     }
 ]
