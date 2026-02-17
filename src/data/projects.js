@@ -5,7 +5,10 @@ import project2Image2 from "../assets/imgs/project2-img2.png"
 import project2Image3 from "../assets/imgs/project2-img3.png"
 import project2Image4 from "../assets/imgs/project2-img4.png"
 
-import project3Image from "../assets/imgs/projectImg3.jfif"
+import project3Image1 from "../assets/imgs/project3-img1.jpeg"
+import project3Image2 from "../assets/imgs/project3-img2.jpeg"
+import project3Image3 from "../assets/imgs/project3-img3.jpeg"
+import project3Image4 from "../assets/imgs/project3-img4.jpeg"
 
 export const projects = [
     // {
@@ -28,13 +31,14 @@ export const projects = [
         cover:project2Image1,
         imgs:[project2Image2, project2Image3,project2Image4]
     },
-    // {
-    //     id:3,
-    //     title: "Casa buffa",
-    //     description: "Landing page para un negocio de descartable y repostería, con un carrito virtual para enviar y recibir la cotización del mismo vía whatsapp.",
-    //     technologies: ["React", "Vite", "TailwindCSS"],
-    //     github: "url",
-    //     cover:project2Image2,
-    //     imgs:[project1Image, project1Image]
-    // }
+    {
+        id:3,
+        title: "Casa buffa",
+        description: "Landing page para un negocio de descartable y repostería, con un carrito virtual para enviar y recibir la cotización del mismo vía whatsapp.",
+        technologies: ["React", "TypeScript", "TailwindCSS", "Node.js"],
+        estado: "En desarrollo",
+        github: "url",
+        cover:project3Image1,
+        imgs:[project3Image2, project3Image3,project3Image4]
+    }
 ]
