@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./ProjectsComponent.css";
 import { projects } from "../../data/projects";
 import githubIcon from "../../icons/Github.svg";
+import codeIcon from "../../icons/Code.svg";
 
 function ProjectsComponent() {
 
@@ -27,7 +28,7 @@ function ProjectsComponent() {
         <div key={project.id} className={`project-container flex flex-col md:flex-row ${project.id % 2 === 0 ? "" : "md:flex-row-reverse"} md:items-center border-b-2 border-[#353841] gap-2`}>
 
         <div className="project-information w-full">
-            <h3 className="project-title text-[1.2rem] lg:text-[1.4rem]">
+            <h3 className="project-title text-[1.3rem] lg:text-[1.5rem]">
                 {project.title}
             </h3>
 
@@ -41,9 +42,12 @@ function ProjectsComponent() {
                     Código
                 </a>
 
-                <a href={project.url} target="__blank" className={`project-state rounded-[15px] flex flex-row items-center justify-center  ${project.estado === "Página oficial"
-                    ? "bg-[#51BBD5] text-black"
-                    : "bg-[#2b2e36]"}`}>{project.estado}</a>
+                <a href={project.url} target="__blank" className={`project-state rounded-[15px] flex flex-row items-center justify-center gap-1 ${project.estado === "Página oficial"
+                    ? "bg-[#51BBD5] text-black hover:bg-[#42a8c4]"
+                    : "bg-[#2b2e36]"}`}>
+                    <img src={codeIcon} alt="" className={`${project.estado === "Página oficial" ? "hidden" : "block invert"}`}/>
+                    {project.estado}
+                </a>
             </div>
 
             <div className="technologies-container flex flex-wrap">
