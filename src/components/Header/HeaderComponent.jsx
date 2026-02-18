@@ -44,14 +44,14 @@ function HeaderComponent({ scrollToSection, refs }) {
 
         <div className=" w-full h-full justify-between flex flex-row lg:w-5xl lg:justify-between lg:items-center">
             <div className="header-title flex flex-row items-center justify-center gap-1">
-                <div className="b h-full flex flex-col justify-center">
+                <div className="h-full flex flex-col justify-center">
                     <img src={profileImg} alt="Profile image" className="h-10 rounded-[50%]"/>
                 </div>
                 <div className="flex flex-col justify-center items-start h-full">
-                    <h4 className="text-[1rem] md:text-[1rem] lg:text-[1.1rem]">
+                    <h4 className="title-container text-[1rem] md:text-[1rem] lg:text-[1.1rem] relative">
                         Matías Buffa
                     </h4>
-                    <h5 className="text-[.7rem]">Desarrollador Web</h5>
+                    <h5 className="text-[.75rem] absolute top-8">Desarrollador Web</h5>
                 </div>
                 
             </div>

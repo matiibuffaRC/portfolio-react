@@ -11,6 +11,10 @@
     overflow-y: hidden;
 }
 
+.title-container{
+    padding-bottom: 10px;
+}
+
 .btn-menu{
     overflow-y: hidden;
 }
