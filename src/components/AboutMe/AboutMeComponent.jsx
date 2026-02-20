@@ -25,8 +25,8 @@ function AboutMeComponent() {
     return (
         <div className="aboutMe-section w-screen h-full bg-[#21252c] to-[#1a1d23]  flex flex-col justify-center items-center">
             <div className="aboutMe-container lg:max-w-5xl">
-                <h2 className='aboutMe-title text-[1rem] text-[#58C4DC] lg:text-[1.2rem]'>SOBRE MÍ</h2>
-                <h3 className="aboutMe-subtitle text-white text-[1.4rem] lg:text-[1.5rem]">Matías Buffa</h3>
+                <h2 className='aboutMe-title text-[1rem] text-[#58C4DC] lg:text-[1.2rem] font-bold'>SOBRE MÍ</h2>
+                <h3 className="aboutMe-subtitle text-white text-[1.4rem] lg:text-[1.5rem] font-bold">Matías Buffa</h3>
                 <div className="aboutMe-information-container grid grid-cols-1  gap-2.5 md:grid-cols-2 md:grid-rows-2">
 
                     <div className="aboutMe-information-personal md:col-start-1 md:row-start-1">

@@ -25,7 +25,7 @@ export const projects = [
     {
         id:2,
         title: "Casa buffa",
-        description: "E-commerce para un negocio de descartable y repostería, con un carrito virtual para enviar y recibir la cotización del mismo vía whatsapp.",
+        description: "E-commerce para un negocio de materia prima de panificación, descartable, cotillón y repostería, con un carrito virtual para enviar y recibir la cotización del mismo vía whatsapp.",
         technologies: ["React", "TypeScript", "TailwindCSS", "Node.js"],
         estado: "En desarrollo",
         github: "url",

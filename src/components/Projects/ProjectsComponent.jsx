@@ -28,7 +28,7 @@ function ProjectsComponent() {
         <div key={project.id} className={`project-container flex flex-col md:flex-row ${project.id % 2 === 0 ? "" : "md:flex-row-reverse"} md:items-center border-b-2 border-[#353841] gap-2`}>
 
         <div className="project-information w-full">
-            <h3 className="project-title text-[1.3rem] lg:text-[1.5rem]">
+            <h3 className="project-title text-[1.3rem] lg:text-[1.5rem] font-bold">
                 {project.title}
             </h3>
 
@@ -44,7 +44,7 @@ function ProjectsComponent() {
 
                 <a href={project.url} target="__blank" className={`project-state rounded-[15px] flex flex-row items-center justify-center gap-1 ${project.estado === "Página oficial"
                     ? "bg-[#51BBD5] text-black hover:bg-[#42a8c4]"
-                    : "bg-[#2b2e36]"}`}>
+                    : "bg-[#2b2e36] hover:bg-[#353841]"}`}>
                     <img src={codeIcon} alt="" className={`${project.estado === "Página oficial" ? "hidden" : "block invert"}`}/>
                     {project.estado}
                 </a>
@@ -52,7 +52,7 @@ function ProjectsComponent() {
 
             <div className="technologies-container flex flex-wrap">
                 {project.technologies.map((tech) => (
-                <h5 key={tech} className="tech bg-[#2b2e36] rounded-[25px]">
+                <h5 key={tech} className="tech bg-[#2b2e36] rounded-[25px] hover:bg-[#353841]">
                     {tech}
                 </h5>
                 ))}
@@ -63,7 +63,7 @@ function ProjectsComponent() {
         <div className="flex flex-col-reverse md:flex-row gap-2 md:w-[90%]">
             <div className="photos-options-container flex md:flex-col justify-center items-center gap-2">
                 {project.imgs.map((img, imgIndex) => (
-                <div key={imgIndex} onClick={() => changeImage(projectIndex, imgIndex)} className={`project-photo w-14 h-14 rounded-[10px] cursor-pointer border ${imageSelected[projectIndex] === imgIndex
+                <div key={imgIndex} onClick={() => changeImage(projectIndex, imgIndex)} className={`project-photo w-14 h-14 border-2 hover:border-[#aaa] rounded-[15px] cursor-pointer ${imageSelected[projectIndex] === imgIndex
                     ? "border-white"
                     : "border-[#2a2d35]"}`}>
                     <img src={img} alt="" className="w-full h-full object-cover rounded-[10px]"/>
@@ -82,8 +82,8 @@ function ProjectsComponent() {
     return (
         <div className="w-full bg-[#1a1d23] flex justify-center">
             <div className="projects-section text-white lg:w-5xl">
-                <h2 className="text-[#58C4DC]">PROYECTOS</h2>
-                <h3 className="text-[1.4rem]">Mis proyectos destacados</h3>
+                <h2 className="text-[#58C4DC] font-bold">PROYECTOS</h2>
+                <h3 className="text-[1.4rem] font-bold">Mis proyectos destacados</h3>
 
                 <div className="projects-container">
                     {printProjects}
