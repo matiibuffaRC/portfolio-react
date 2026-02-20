@@ -32,17 +32,17 @@ function ProjectsComponent() {
                 {project.title}
             </h3>
 
-            <h4 className="project-description text-[#ddd] text-[.8rem] lg:text-[1rem]">
+            <h4 className="project-description text-[#ddd] text-[1rem] md:text-[.8rem] lg:text-[1rem]">
                 {project.description}
             </h4>
 
             <div className=" flex flex-row gap-2">
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link text-[.8rem] lg:text-[1rem] bg-[#2b2e36] w-30 rounded-[15px] flex items-center justify-center gap-2 px-4 py-2 hover:bg-[#353841] transition-colors">
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link text-[1rem] md:text-[.8rem] lg:text-[1rem] bg-[#2b2e36] w-30 rounded-[15px] flex items-center justify-center gap-2 px-4 py-2 hover:bg-[#353841] transition-colors">
                     <img src={githubIcon} alt="github" className="h-4 w-4 lg:w-5 lg:h-5 invert" />
                     Código
                 </a>
 
-                <a href={project.url} target="__blank" className={`project-state rounded-[15px] text-[.8rem] lg:text-[1rem]  flex flex-row items-center justify-center gap-1 ${project.estado === "Página oficial"
+                <a href={project.url} target="__blank" className={`project-state rounded-[15px] text-[1rem] md:text-[.8rem] lg:text-[1rem] flex flex-row items-center justify-center gap-1 ${project.estado === "Página oficial"
                     ? "bg-[#51BBD5] text-black hover:bg-[#42a8c4]"
                     : "bg-[#2b2e36] hover:bg-[#353841]"}`}>
                     <img src={codeIcon} alt="" className={`h-4 w-4 lg:w-5 lg:h-5 ${project.estado === "Página oficial" ? "hidden" : "block invert"}`}/>
@@ -52,7 +52,7 @@ function ProjectsComponent() {
 
             <div className="technologies-container flex flex-wrap">
                 {project.technologies.map((tech) => (
-                <h5 key={tech} className="tech bg-[#2b2e36] text-[.8rem] lg:text-[1rem] rounded-[25px] hover:bg-[#353841]">
+                <h5 key={tech} className="tech bg-[#2b2e36] text-[1rem] md:text-[.8rem] lg:text-[1rem] rounded-[25px] hover:bg-[#353841]">
                     {tech}
                 </h5>
                 ))}
@@ -82,8 +82,8 @@ function ProjectsComponent() {
     return (
         <div className="w-full bg-[#1a1d23] flex justify-center">
             <div className="projects-section text-white lg:w-5xl">
-                <h2 className="text-[#58C4DC] font-bold">PROYECTOS</h2>
-                <h3 className="text-[1.4rem] font-bold">Mis proyectos destacados</h3>
+                <h2 className="text-[#58C4DC] text-[1.3rem] md:text-[1.5rem] font-bold section-title">PROYECTOS</h2>
+                <h3 className="text-[1.5rem] md:text-[1.6rem] font-bold section-title">Mis proyectos destacados</h3>
 
                 <div className="projects-container">
                     {printProjects}

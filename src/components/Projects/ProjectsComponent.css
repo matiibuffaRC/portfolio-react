@@ -4,6 +4,10 @@
     padding-bottom: 20px;
 }
 
+.section-title{
+    padding-left: 15px;
+}
+
 .project-container{
     margin: 30px 10px 50px 10px;
     padding-bottom: 20px;
@@ -56,9 +60,6 @@ svg{
     padding-bottom: 20px;
 }
 
-.project-photo{
-    margin: 0px 10px;
-}
 
 .photos-container{
     padding: 17px 0px;
