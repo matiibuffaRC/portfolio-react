@@ -7,7 +7,7 @@ function AboutMeComponent() {
     const printSkills = skills.map((skill)=>{
         return(
             <div key={skill.id} className="skills-container">
-                <h3 className="skills-title text-white text-[1.1rem]">{skill.categoryName}</h3>
+                <h3 className="skills-title text-white text-[1.2rem] font-bold">{skill.categoryName}</h3>
                 <div className="skills-technologies-container flex flex-row flex-wrap ">
                     {skill.technologies.map((technology)=>{
                         return(
@@ -48,7 +48,7 @@ function AboutMeComponent() {
                     </div>
 
                     <div className="aboutMe-information-skills md:col-start-2 md:row-start-1 md:row-span-2 bg-[#1A1D23] rounded-[25px]">
-                        <h3 className="aboutMe-text aboutMe-information-title last-title text-[1.3rem] text-white lg:text-[1.4rem]">Habilidades técnicas</h3>
+                        <h3 className="aboutMe-text aboutMe-information-title last-title text-[1.4rem] text-white lg:text-[1.4rem] font-bold">Habilidades técnicas</h3>
                         {printSkills}
                     </div>
 
