@@ -32,27 +32,27 @@ function ProjectsComponent() {
                 {project.title}
             </h3>
 
-            <h4 className="project-description text-[#ddd]">
+            <h4 className="project-description text-[#ddd] text-[.8rem] lg:text-[1rem]">
                 {project.description}
             </h4>
 
             <div className=" flex flex-row gap-2">
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link bg-[#2b2e36] w-30 rounded-[15px] flex items-center justify-center gap-2 px-4 py-2 hover:bg-[#353841] transition-colors">
-                    <img src={githubIcon} alt="github" className="w-5 h-5 invert" />
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link text-[.8rem] lg:text-[1rem] bg-[#2b2e36] w-30 rounded-[15px] flex items-center justify-center gap-2 px-4 py-2 hover:bg-[#353841] transition-colors">
+                    <img src={githubIcon} alt="github" className="h-4 w-4 lg:w-5 lg:h-5 invert" />
                     Código
                 </a>
 
-                <a href={project.url} target="__blank" className={`project-state rounded-[15px] flex flex-row items-center justify-center gap-1 ${project.estado === "Página oficial"
+                <a href={project.url} target="__blank" className={`project-state rounded-[15px] text-[.8rem] lg:text-[1rem]  flex flex-row items-center justify-center gap-1 ${project.estado === "Página oficial"
                     ? "bg-[#51BBD5] text-black hover:bg-[#42a8c4]"
                     : "bg-[#2b2e36] hover:bg-[#353841]"}`}>
-                    <img src={codeIcon} alt="" className={`${project.estado === "Página oficial" ? "hidden" : "block invert"}`}/>
+                    <img src={codeIcon} alt="" className={`h-4 w-4 lg:w-5 lg:h-5 ${project.estado === "Página oficial" ? "hidden" : "block invert"}`}/>
                     {project.estado}
                 </a>
             </div>
 
             <div className="technologies-container flex flex-wrap">
                 {project.technologies.map((tech) => (
-                <h5 key={tech} className="tech bg-[#2b2e36] rounded-[25px] hover:bg-[#353841]">
+                <h5 key={tech} className="tech bg-[#2b2e36] text-[.8rem] lg:text-[1rem] rounded-[25px] hover:bg-[#353841]">
                     {tech}
                 </h5>
                 ))}
@@ -60,19 +60,19 @@ function ProjectsComponent() {
         </div>
 
         {/* FOTOS */}
-        <div className="flex flex-col-reverse md:flex-row gap-2 md:w-[90%]">
+        <div className="photos-container flex flex-col-reverse md:flex-row gap-2 md:w-[120%]">
             <div className="photos-options-container flex md:flex-col justify-center items-center gap-2">
                 {project.imgs.map((img, imgIndex) => (
-                <div key={imgIndex} onClick={() => changeImage(projectIndex, imgIndex)} className={`project-photo w-14 h-14 border-2 hover:border-[#aaa] rounded-[15px] cursor-pointer ${imageSelected[projectIndex] === imgIndex
+                <div key={imgIndex} onClick={() => changeImage(projectIndex, imgIndex)} className={`project-photo overflow-hidden w-14 h-14 border-2 hover:border-[#aaa] rounded-[15px] cursor-pointer ${imageSelected[projectIndex] === imgIndex
                     ? "border-white"
                     : "border-[#2a2d35]"}`}>
-                    <img src={img} alt="" className="w-full h-full object-cover rounded-[10px]"/>
+                    <img src={img} alt="" className="w-full h-full object-cover"/>
                 </div>
                 ))}
             </div>
 
             <div className="project-photo w-full rounded-[20px] flex justify-center items-center border-3 border-[#2a2d35] shadow-2xl">
-                <img src={currentImage} alt="" className="w-full object-fill rounded-[15px]"/>
+                <img src={currentImage} alt="" className="w-full h-full object-cover"/>
             </div>
         </div>
     </div>

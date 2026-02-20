@@ -15,6 +15,7 @@
 
 .project-information{
     margin: 10px 0px;
+    padding: 5px;
 }
 
 .project-title{
@@ -35,12 +36,12 @@ svg{
 }
 
 .technologies-container{
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .tech{
     padding: 7px 15px;
-    margin: 5px 7px;
+    margin: 5px 5px;
 }
 
 .tech:first-child{
@@ -55,6 +56,13 @@ svg{
     padding-bottom: 20px;
 }
 
+.project-photo{
+    margin: 0px 10px;
+}
+
+.photos-container{
+    padding: 17px 0px;
+}
 
 @media (min-width: 1024px){
     .project-information{
