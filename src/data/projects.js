@@ -14,7 +14,7 @@ export const projects = [
     {
         id:1,
         title: "Complejo de cabañas Lo Nuestro",
-        description: "Landing page para un complejo de cabañas en zona turística, con la información necesaria para realizar una reserva vía whatsapp.",
+        description: "Landing page para un complejo de cabañas en zona turística de la región, con la información necesaria para realizar consultas/reservas vía whatsapp.",
         technologies: ["React","TailwindCSS"],
         github: "https://github.com/matiibuffaRC/cabanias-lo-nuestro",
         estado: "Página oficial",
@@ -25,10 +25,11 @@ export const projects = [
     {
         id:2,
         title: "Casa buffa",
-        description: "E-commerce para un negocio de descartable y repostería, con un carrito virtual para enviar y recibir la cotización del mismo vía whatsapp.",
+        description: "E-commerce para un negocio de descartables y materia prima para panificación y repostería, con un carrito virtual que permite la selección de métodos de pagos y formas de retiro de pedidos con la finalización por WhatsApp de la sucursal especificada.",
         technologies: ["React", "TypeScript", "TailwindCSS"],
         estado: "En desarrollo",
-        github: "url",
+        github: "https://github.com/matiibuffaRC/Mini-E-Commerce",
+        url:"https://casabuffaonline.vercel.app/",
         cover:project3Image1,
         imgs:[project3Image2, project3Image3,project3Image4]
     }

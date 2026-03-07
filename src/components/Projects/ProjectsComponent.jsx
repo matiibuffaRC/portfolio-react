@@ -46,7 +46,7 @@ function ProjectsComponent() {
                     ? "bg-[#51BBD5] text-black hover:bg-[#42a8c4]"
                     : "bg-[#2b2e36] hover:bg-[#353841]"}`}>
                     <img src={codeIcon} alt="" className={`h-4 w-4 lg:w-5 lg:h-5 ${project.estado === "Página oficial" ? "hidden" : "block invert"}`}/>
-                    {project.estado}
+                    {project.estado === "En desarrollo" ? "Visitar demo" : "Página Oficial"}
                 </a>
             </div>
 
