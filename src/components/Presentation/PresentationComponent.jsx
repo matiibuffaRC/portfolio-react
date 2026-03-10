@@ -19,7 +19,7 @@ function PresentationComponent() {
                         />
                         <span>Curriculum</span>
                     </a>
-                    <a href="/docs/MatiasBuffaCV.pdf" target="__blank" className="flex flex-row items-center justify-center gap-2 px-6 py-3 bg-[#58C4DC] text-[#1a1d23] font-bold rounded-lg hover:bg-[#42a8c4] transition-colors">
+                    <a href="https://github.com/matiibuffaRC" target="__blank" className="flex flex-row items-center justify-center gap-2 px-6 py-3 bg-[#58C4DC] text-[#1a1d23] font-bold rounded-lg hover:bg-[#42a8c4] transition-colors">
                         <img 
                             src={githubIcon}
                             alt="github" 
