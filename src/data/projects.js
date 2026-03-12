@@ -1,9 +1,9 @@
 import project1Image from "../assets/imgs/projectImg.jfif"
 
-import project2Image1 from "../assets/imgs/project2-img1.png"
-import project2Image2 from "../assets/imgs/project2-img2.png"
-import project2Image3 from "../assets/imgs/project2-img3.png"
-import project2Image4 from "../assets/imgs/project2-img4.png"
+import project2Image1 from "../assets/imgs/project2-img1.jpeg"
+import project2Image2 from "../assets/imgs/project2-img2.jpeg"
+import project2Image3 from "../assets/imgs/project2-img3.jpeg"
+import project2Image4 from "../assets/imgs/project2-img4.jpeg"
 
 import project3Image1 from "../assets/imgs/project3-img1.jpeg"
 import project3Image2 from "../assets/imgs/project3-img2.jpeg"
