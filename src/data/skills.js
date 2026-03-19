@@ -12,7 +12,7 @@ export const skills = [
     {
         id: 2,
         categoryName: "FrameWorks y librerías",
-        technologies: ["React.js", "Tailwind CSS", "Node.js", "Next.js"],
+        technologies: ["React.js", "Tailwind CSS", "Node.js", "Next.js", "Express.js"],
         icon:FrameWorksImage,
     },
     {
