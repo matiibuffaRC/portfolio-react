@@ -35,7 +35,7 @@ function HeaderComponent({ scrollToSection, refs }) {
     };
 
     return (
-    <header className="header h-15 w-screen shadow-md bg-[#23272F] flex items-center justify-between text-white fixed left-0 top-0 z-15  lg:justify-center">
+    <header className="header h-15 w-screen shadow-md bg-[#23272F]/70 backdrop-blur flex items-center justify-between text-white fixed left-0 top-0 z-15 lg:justify-center border-b border-white/10">
         <div
             className={`fixed inset-0 bg-[rgba(0,0,0,.45)] z-10 
             ${menuOpen ? "block" : "hidden"} lg:hidden`}
