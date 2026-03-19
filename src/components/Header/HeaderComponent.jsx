@@ -35,16 +35,16 @@ function HeaderComponent({ scrollToSection, refs }) {
     };
 
     return (
-    <header className="header h-15 w-screen shadow-md bg-[#23272F]/70 backdrop-blur flex items-center justify-between text-white fixed left-0 top-0 z-15 lg:justify-center border-b border-white/10">
+    <header className="header h-15 w-screen shadow-md bg-[#23272F]  flex items-center justify-between text-white fixed left-0 top-0 z-50 lg:justify-center border-b border-white/10">
         <div
-            className={`fixed inset-0 bg-[rgba(0,0,0,.45)] z-10 
+            className={`fixed inset-0 bg-[rgba(0,0,0,.45)] z-40 
             ${menuOpen ? "block" : "hidden"} lg:hidden`}
             onClick={openMenu}
         />
 
         <div className=" w-full h-full justify-between flex flex-row lg:w-5xl lg:justify-between lg:items-center">
             <div className="header-title flex flex-row items-center justify-center gap-1">
-                <div className="h-full flex flex-col justify-center">
+                <div className="h-full flex flex-col justify-center">g
                     <img src={profileImg} alt="Profile image" className="h-10 rounded-[50%]"/>
                 </div>
                 <div className="flex flex-col justify-center items-start h-full">
@@ -65,14 +65,7 @@ function HeaderComponent({ scrollToSection, refs }) {
             />
         </div>
 
-        <nav
-            className={`fixed top-0 left-0 z-20 h-screen w-62.5 bg-[#23272f]
-            transition-transform duration-300 ease-in-out
-            ${menuOpen ? "translate-x-0" : "-translate-x-full"}
-            md:w-80
-            lg:static lg:h-full lg:w-auto lg:bg-transparent
-            lg:translate-x-0 lg:transition-none lg:flex lg:items-center`}
-        >
+        <nav className={`fixed top-0 left-0 z-50 h-screen w-62.5 bg-[#23272f] transition-transform duration-300 ease-in-out ${menuOpen ? "translate-x-0" : "-translate-x-full"} md:w-80 lg:static lg:h-full lg:w-auto lg:bg-transparent lg:translate-x-0 lg:transition-none lg:flex lg:items-center`}>
             <ul className="nav-list flex flex-col lg:flex-row lg:gap-4 lg:p-0 lg:h-full lg:items-center">
                 <li 
                     className="nav-list-item cursor-pointer text-[1.2rem] lg:hover:bg-[#333A45] rounded-[25px] lg:text-[1rem]" 
