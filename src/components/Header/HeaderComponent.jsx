@@ -44,7 +44,7 @@ function HeaderComponent({ scrollToSection, refs }) {
 
         <div className=" w-full h-full justify-between flex flex-row lg:w-5xl lg:justify-between lg:items-center">
             <div className="header-title flex flex-row items-center justify-center gap-1">
-                <div className="h-full flex flex-col justify-center">g
+                <div className="h-full flex flex-col justify-center">
                     <img src={profileImg} alt="Profile image" className="h-10 rounded-[50%]"/>
                 </div>
                 <div className="flex flex-col justify-center items-start h-full">
