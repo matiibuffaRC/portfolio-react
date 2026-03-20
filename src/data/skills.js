@@ -18,7 +18,7 @@ export const skills = [
     {
         id: 3,
         categoryName: "Herramientas",
-        technologies: ["Git", "Github", "Figma", "VS Code", "Microsoft Office"],
+        technologies: ["Git", "Github", "Figma", "VS Code", "Microsoft Office", "Jira"],
         icon:toolsImage,
     }
 ]
