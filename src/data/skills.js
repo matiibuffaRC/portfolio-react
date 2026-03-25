@@ -5,20 +5,26 @@ import toolsImage from "../icons/Tool.svg"
 export const skills = [
     {
         id: 1,
-        categoryName: "Lenguajes de programación",
-        technologies: ["HTML","CSS", "JavaScript", "TypeScript"],
-        icon:lenguagesImage,
+        categoryName: "Lenguajes",
+        technologies: ["JavaScript", "TypeScript"],
+        icon: lenguagesImage,
     },
     {
         id: 2,
-        categoryName: "FrameWorks y librerías",
-        technologies: ["React.js", "Tailwind CSS", "Node.js", "Next.js", "Express.js"],
-        icon:FrameWorksImage,
+        categoryName: "Frontend",
+        technologies: ["HTML", "CSS", "React", "Next.js", "Tailwind CSS"],
+        icon: FrameWorksImage,
     },
     {
         id: 3,
+        categoryName: "Backend",
+        technologies: ["Node.js", "Express"],
+        icon: FrameWorksImage,
+    },
+    {
+        id: 4,
         categoryName: "Herramientas",
-        technologies: ["Git", "Github", "Figma", "VS Code", "Microsoft Office", "Jira"],
-        icon:toolsImage,
+        technologies: ["Git", "GitHub", "Figma", "VS Code", "Jira"],
+        icon: toolsImage,
     }
 ]
