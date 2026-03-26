@@ -1,6 +1,7 @@
-import lenguagesImage from "../icons/Code.svg"
-import FrameWorksImage from "../icons/Rocket.svg"
-import toolsImage from "../icons/Tool.svg"
+import lenguagesImage from "../icons/Code.svg";
+import FrameWorksImage from "../icons/Rocket.svg";
+import toolsImage from "../icons/Tool.svg";
+import TuercaImage from "../icons/tuerca.png";
 
 export const skills = [
     {
@@ -19,7 +20,7 @@ export const skills = [
         id: 3,
         categoryName: "Backend",
         technologies: ["Node.js", "Express"],
-        icon: FrameWorksImage,
+        icon: TuercaImage,
     },
     {
         id: 4,
