@@ -52,7 +52,7 @@ function ProjectsComponent() {
 
             <div className="technologies-container flex flex-wrap">
                 {project.technologies.map((tech) => (
-                <h5 key={tech} className="tech bg-[#2b2e36] text-[1rem] md:text-[.8rem] lg:text-[1rem] rounded-[25px] hover:bg-[#353841]">
+                <h5 key={tech} className="tech select-none  bg-[#2b2e36] text-[1rem] md:text-[.8rem] lg:text-[1rem] rounded-[25px] hover:bg-[#353841]">
                     {tech}
                 </h5>
                 ))}
