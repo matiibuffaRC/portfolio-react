@@ -19,13 +19,13 @@ export const skills = [
     {
         id: 3,
         categoryName: "Backend",
-        technologies: ["Node.js", "Express"],
+        technologies: ["Node.js", "Express", "MongoDB", "SQL"],
         icon: TuercaImage,
     },
     {
         id: 4,
         categoryName: "Herramientas",
-        technologies: ["Git", "GitHub", "Figma", "VS Code", "Jira"],
+        technologies: ["Git", "GitHub", "Figma", "Power Query", "VS Code", "Jira", "Pack Office"],
         icon: toolsImage,
     }
 ]
